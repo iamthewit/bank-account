@@ -8,7 +8,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: NPM install
-        run: |
-          npm install
-          npm test
+
+      - name: Install NPM dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
