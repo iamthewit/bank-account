@@ -3,6 +3,17 @@ name: Run tests
 on: push
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install NPM dependencies
+        run: npm install
+
+      - name: Compile TypeScript to JavaScript
+        run: ./node_modules/.bin/tsc
   test:
     runs-on: ubuntu-latest
     steps:

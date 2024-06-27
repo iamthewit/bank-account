@@ -1,2 +1,8 @@
 .idea
 node_modules
+
+# Ignores compiled TypeScript files
+/src/**/*.map
+/src/**/*.js
+/tests/**/*.map
+/tests/**/*.js
