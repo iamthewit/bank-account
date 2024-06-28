@@ -1,5 +1,5 @@
 import {Account} from "../../src/domain/Account";
-import {describe, expect, it, test} from "@jest/globals";
+import {describe, expect, it} from "@jest/globals";
 
 describe("Account", () => {
     it("should deposit money", () => {

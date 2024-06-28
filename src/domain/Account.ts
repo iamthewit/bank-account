@@ -1,5 +1,5 @@
 export class Account {
-  private balance: number = 0;
+  private balance = 0;
 
   deposit(amount: number) {
     this.balance += amount;
